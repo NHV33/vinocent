@@ -7,9 +7,10 @@ on:
 
 permissions:
   contents: write
-  issues: write
-  pull-requests: write
-  packages: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   release:
@@ -25,7 +26,7 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - name: Install deps
-        run: npm ci
+        run: npm install --no-audit --no-fund
 
       - name: Semantic Release
         env:
