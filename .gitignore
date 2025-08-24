@@ -16,3 +16,25 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+
+# Node / JS project ignores
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Optional caches & outputs
+.DS_Store
+dist/
+coverage/
+.nyc_output/
+
+# Env / local config
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/

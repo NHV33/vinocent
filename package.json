@@ -1,0 +1,37 @@
+{
+  "name": "@vinocent/vinocent",
+  "version": "1.0.0",
+  "description": "ES",
+  "keywords": [
+    "js",
+    "utils"
+  ],
+  "homepage": "https://github.com/NHV33/vinocent#readme",
+  "bugs": {
+    "url": "https://github.com/NHV33/vinocent/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NHV33/vinocent.git"
+  },
+  "license": "ISC",
+  "author": "nhv33",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^24.2.7"
+  }
+}
